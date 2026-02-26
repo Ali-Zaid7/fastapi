@@ -5,7 +5,7 @@ from sqlalchemy.exc import IntegrityError
 
 app = FastAPI()
 
-database_url = "postgresql://neondb_owner:npg_2qg6uvsfxWbI@ep-floral-night-aigfn3dx-pooler.c-4.us-east-1.aws.neon.tech/fastapi_practice?sslmode=require&channel_binding=require"
+database_url = database_url
 database_client = create_engine(database_url, echo=True) # echo=True - Logs all SQL queries to the console
 
 class Students(SQLModel, table=True):
